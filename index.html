@@ -147,14 +147,36 @@
         </div>
     </footer>
     
-    <!-- JavaScript for date-based content switching -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Define stage dates
-            const stage2StartDate = new Date('2025-06-11T00:00:00+10:00'); // June 11, 2025 (Sydney time)
-            const stage3StartDate = new Date('2025-06-25T00:00:00+10:00'); // June 25, 2025 (Sydney time)
+<!-- JavaScript for testing specific stages -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Test mode - uncomment the stage you want to test
+        const testMode = true;
+        const stageToTest = 2; // Change this to 1, 2, or 3 to test different stages
+        
+        if (testMode) {
+            // Hide all stages initially
+            document.getElementById('stage-1').style.display = 'none';
+            document.getElementById('stage-2').style.display = 'none';
+            document.getElementById('stage-3').style.display = 'none';
             
-            // Get current date (in local time)
+            // Show only the test stage
+            document.getElementById('stage-' + stageToTest).style.display = 'block';
+            
+            // Set appropriate title
+            if (stageToTest === 1) {
+                document.title = "Kneadyboi - Coming Soon";
+            } else if (stageToTest === 2) {
+                document.title = "Kneadyboi - Closing Down Sale";
+            } else if (stageToTest === 3) {
+                document.title = "Kneadyboi - Thank You";
+            }
+        } else {
+            // Normal date-based logic (for production)
+            const stage2StartDate = new Date('2025-06-11T00:00:00+10:00'); // June 11, 2025
+            const stage3StartDate = new Date('2025-06-25T00:00:00+10:00'); // June 25, 2025
+            
+            // Get current date
             const currentDate = new Date();
             
             // Hide all stages initially
@@ -164,19 +186,17 @@
             
             // Show appropriate stage based on current date
             if (currentDate >= stage3StartDate) {
-                // Stage 3: After June 24
                 document.getElementById('stage-3').style.display = 'block';
                 document.title = "Kneadyboi - Thank You";
             } else if (currentDate >= stage2StartDate) {
-                // Stage 2: June 11-24
                 document.getElementById('stage-2').style.display = 'block';
                 document.title = "Kneadyboi - Closing Down Sale";
             } else {
-                // Stage 1: Until June 10
                 document.getElementById('stage-1').style.display = 'block';
                 document.title = "Kneadyboi - Coming Soon";
             }
-        });
-    </script>
+        }
+    });
+</script>
 </body>
 </html>
