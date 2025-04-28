@@ -1,26 +1,30 @@
-/* Base styles */
+/* Kneadyboi Brand Styles - Updated to match current website */
 :root {
   --primary-red: #D21C23;
   --primary-green: #285E37;
   --beige: #E2D6C5;
   --gold: #FBA406;
   --off-white: #FDFFF6;
+  --dark-gray: #333333;
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Poppins', 'Lora', sans-serif;
   background-color: var(--primary-red);
-  color: #212529;
+  color: var(--dark-gray);
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
 .container {
@@ -35,6 +39,7 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -45,67 +50,77 @@ header .container {
 }
 
 .logo-area {
-  padding: 20px;
+  padding: 15px 20px;
   text-align: left;
   background-color: var(--beige);
+  display: flex;
+  align-items: center;
 }
 
 .logo-area img {
-  max-height: 80px;
+  max-height: 70px;
   margin-left: 15px;
 }
 
-/* Section Headings */
+/* Section Headings - Kneadyboi style */
+.section-heading {
+  margin-bottom: 30px;
+}
+
 .section-heading-upper {
   display: block;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: var(--primary-red);
 }
 
 .section-heading-lower {
   display: block;
-  font-size: 3rem;
-  font-weight: 100;
+  font-size: 2.5rem;
+  font-weight: 700;
   line-height: 1.2;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-gray);
 }
 
 /* Hero Section */
 .hero-section {
   margin: 30px 0;
   padding: 0;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .hero-content {
   display: flex;
   min-height: 400px;
+  justify-content: center;
 }
 
 .message-box {
   background-color: var(--off-white);
-  padding: 50px;
+  padding: 40px;
   max-width: 800px;
-  margin: 50px auto;
+  margin: 30px auto;
   position: relative;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .teaser-image, .closing-image {
   margin-top: 30px;
+  text-align: center;
 }
 
 .teaser-image img, .closing-image img {
   max-width: 100%;
   height: auto;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Stage 2: Closing Down Sale Specific Styles */
@@ -115,35 +130,39 @@ header .container {
   right: -15px;
   background-color: var(--primary-red);
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-weight: bold;
-  border-radius: 3px;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
   transform: rotate(5deg);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .product-details {
-  margin-top: 25px;
-  padding: 20px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 25px 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
 
 .product-image {
   flex: 1;
   min-width: 250px;
+  text-align: center;
 }
 
 .product-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .price-box {
@@ -156,69 +175,81 @@ header .container {
   text-decoration: line-through;
   color: #888;
   display: block;
+  font-weight: 300;
 }
 
 .price {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--primary-red);
   margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .unit {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 400;
 }
 
 .shipping-info {
   font-size: 0.9rem;
-  margin-top: 5px;
+  margin-top: 8px;
   color: #666;
+  font-style: italic;
 }
 
 .product-features {
-  margin-top: 20px;
+  margin-top: 25px;
   flex: 1 1 100%;
 }
 
 .product-features ul {
   list-style: none;
-  padding-left: 5px;
+  padding-left: 0;
   margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .product-features li {
-  margin-bottom: 8px;
-  font-size: 1rem;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
   flex: 1 1 250px;
+  padding-left: 30px;
+  position: relative;
+  font-weight: 300;
 }
 
 .product-features i {
   color: var(--primary-green);
   margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 5px;
 }
 
 .buy-button {
-  margin-top: 30px;
+  margin-top: 35px;
   text-align: center;
 }
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  border: 2px solid transparent;
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: all 0.15s ease-in-out;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .btn-primary {
@@ -226,67 +257,85 @@ header .container {
   border-color: var(--primary-green);
   color: white;
   padding: 0.75rem 2rem;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
-  border-radius: 3px;
 }
 
 .btn-primary:hover {
-  background-color: #1a4325;
-  border-color: #1a4325;
+  background-color: #1c4628;
+  border-color: #1c4628;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(40, 94, 55, 0.3);
 }
 
 .btn-lg {
-  padding: 0.75rem 3rem;
-  font-size: 1.2rem;
+  padding: 0.85rem 3rem;
+  font-size: 1.1rem;
 }
 
 /* Contact Form */
 .contact-form {
   background-color: var(--off-white);
-  padding: 50px;
+  padding: 40px;
   margin: 40px auto;
   max-width: 800px;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form-control {
   width: 100%;
-  padding: 12px;
-  border-radius: 3px;
-  border: 1px solid #ced4da;
-  font-family: 'Raleway', sans-serif;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
   background-color: white;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-green);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 94, 55, 0.1);
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: 500;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
 }
 
 textarea.form-control {
   min-height: 120px;
+  resize: vertical;
 }
 
 /* Footer */
 .footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--beige);
+  color: var(--dark-gray);
   padding: 30px 0;
   margin-top: 40px;
+}
+
+.footer p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .message-box {
-    padding: 40px;
-    margin: 30px auto;
+    padding: 35px;
+    margin: 25px auto;
   }
   
   .product-details {
@@ -297,6 +346,10 @@ textarea.form-control {
     width: 100%;
     text-align: center;
   }
+  
+  .section-heading-lower {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -305,26 +358,31 @@ textarea.form-control {
   }
   
   .message-box {
-    padding: 30px;
-    margin: 20px;
-  }
-  
-  .section-heading-lower {
-    font-size: 2.5rem;
+    padding: 25px;
+    margin: 15px;
   }
   
   .contact-form {
-    padding: 30px;
+    padding: 25px;
+  }
+  
+  .sale-badge {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 576px) {
   .message-box {
     padding: 20px;
-    margin: 15px;
+    margin: 10px;
   }
   
   .logo-area img {
-    max-height: 60px;
+    max-height: 50px;
+  }
+  
+  .price {
+    font-size: 2.2rem;
   }
 }
