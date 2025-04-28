@@ -1,3 +1,46 @@
+/* Header styling for full-width color */
+header {
+  background-color: #E2D6C5;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove any container padding/margin in the header */
+header .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo area adjustments */
+.logo-area {
+  padding: 20px;
+  text-align: left;
+  background-color: #E2D6C5;
+}
+
+.logo-area img {
+  max-height: 80px;
+  margin-left: 15px; /* Add some padding from the left edge */
+}
+
+/* Ensure body doesn't add unexpected margins */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora';
+  background-color: #D21C23;
+  color: #212529;
+}
+
+/* Container adjustments for main content */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /* Base styles */
 body {
   font-family: 'Lora';
