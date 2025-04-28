@@ -3,29 +3,90 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Thank you for your support" />
-    <meta name="author" content="Your Business" />
-    <title>Thank You - Business Temporarily Closed</title>
+    <meta name="description" content="Kneadyboi Fortune Cookies" />
+    <meta name="author" content="Kneadyboi" />
+    <title>Kneadyboi Fortune Cookies</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS -->
+    <!-- Core CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo-area">
-                <img src="assets/img/your-logo.png" alt="Your Business Logo">
+                <img src="assets/img/your-logo.png" alt="Kneadyboi Logo">
             </div>
         </div>
     </header>
     
-    <section class="page-section hero-section">
+    <!-- STAGE 1: Default/Coming Soon (Until June 10) -->
+    <section id="stage-1" class="page-section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="message-box">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Stay Tuned</span>
+                        <span class="section-heading-lower">We're Cooking Up Some News</span>
+                    </h2>
+                    <p class="mb-3">Something special is in the works at Kneadyboi. Check back soon for an important announcement.</p>
+                    <p class="mb-3">Feel free to reach out using the contact form below if you have any questions.</p>
+                    <div class="teaser-image">
+                        <img src="assets/img/fortune-cookies.jpg" alt="Fortune Cookies" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 2: Closing Down Sale (June 11-24) -->
+    <section id="stage-2" class="page-section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="message-box">
+                    <div class="sale-badge">CLOSING DOWN SALE</div>
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Limited Time Offer</span>
+                        <span class="section-heading-lower">Fortune Cookies</span>
+                    </h2>
+                    <p class="mb-3">After many wonderful years, we've made the difficult decision to close our doors. As a special thank you to our loyal customers, we're offering our signature fortune cookies at a special price.</p>
+                    
+                    <div class="product-details">
+                        <div class="product-image">
+                            <img src="assets/img/product-image.jpg" alt="Fortune Cookies" class="img-fluid">
+                        </div>
+                        <div class="price-box">
+                            <span class="price-original">$24.95</span>
+                            <span class="price">$10.00</span>
+                            <span class="unit">Box of 12 Cookies</span>
+                            <p class="shipping-info">Plus shipping</p>
+                        </div>
+                        <div class="product-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Handmade in small batches</li>
+                                <li><i class="fas fa-check"></i> Customizable messages</li>
+                                <li><i class="fas fa-check"></i> Perfect for events & gifts</li>
+                                <li><i class="fas fa-check"></i> Limited stock available</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="buy-button">
+                        <!-- Stripe payment link -->
+                        <a href="YOUR_STRIPE_PAYMENT_LINK" class="btn btn-primary btn-lg">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGE 3: Closed (After June 24) -->
+    <section id="stage-3" class="page-section hero-section">
         <div class="container">
             <div class="hero-content">
                 <div class="message-box">
@@ -33,59 +94,89 @@
                         <span class="section-heading-upper">Thank You</span>
                         <span class="section-heading-lower">We're Taking a Break</span>
                     </h2>
-                    <p class="mb-3">Every moment with our valued customers has been a joy. Thank you for your support and loyalty throughout our journey. We're temporarily closing our business but plan to return in the future with renewed energy.</p>
+                    <p class="mb-3">Every moment with our valued customers has been a joy. Thank you for your support and loyalty throughout our journey. We've closed our doors for now, but who knows what the future might bring.</p>
                     <p class="mb-3">Feel free to reach out using the contact form below if you have any questions.</p>
-                    <div class="contact-button">
-                        <a href="#contact-form" class="btn btn-primary">Contact Us</a>
+                    <div class="closing-image">
+                        <img src="assets/img/thank-you.jpg" alt="Thank You" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Form (Present in all stages) -->
     <section id="contact-form" class="page-section cta">
         <div class="container">
             <div class="contact-form">
                 <h2 class="section-heading mb-4">
-                    <span class="section-heading-upper">Stay In Touch</span>
+                    <span class="section-heading-upper">Questions?</span>
                     <span class="section-heading-lower">Contact Us</span>
                 </h2>
-<!-- FormSubmit integration with anti-spam protection -->
-<form action="https://formsubmit.co/hello@kneadyboi.com.au" method="POST">
-    <!-- Anti-spam honeypot field -->
-    <input type="text" name="_honey" style="display:none">
-    <!-- Disable captcha -->
-    <input type="hidden" name="_captcha" value="false">
-    <!-- Custom subject line -->
-    <input type="hidden" name="_subject" value="New message from Kneadyboi landing page">
-    <!-- Custom thank you page redirect -->
-    <input type="hidden" name="_next" value="https://kneadyboi.github.io/landing-page/thanks.html">
-    
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-</form>
+                <!-- FormSubmit integration with anti-spam protection -->
+                <form action="https://formsubmit.co/hello@kneadyboi.com.au" method="POST">
+                    <!-- Anti-spam honeypot field -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- Disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Custom subject line -->
+                    <input type="hidden" name="_subject" value="New message from Kneadyboi website">
+                    <!-- Custom thank you page redirect -->
+                    <input type="hidden" name="_next" value="https://kneadyboi.com.au/thanks.html">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
+
     <footer class="footer text-faded text-center py-5">
         <div class="container">
             <p class="m-0 small">Copyright &copy; Kneadyboi 2025</p>
         </div>
     </footer>
     
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript for date-based content switching -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Define stage dates
+            const stage2StartDate = new Date('2025-06-11T00:00:00+10:00'); // June 11, 2025 (Sydney time)
+            const stage3StartDate = new Date('2025-06-25T00:00:00+10:00'); // June 25, 2025 (Sydney time)
+            
+            // Get current date (in local time)
+            const currentDate = new Date();
+            
+            // Hide all stages initially
+            document.getElementById('stage-1').style.display = 'none';
+            document.getElementById('stage-2').style.display = 'none';
+            document.getElementById('stage-3').style.display = 'none';
+            
+            // Show appropriate stage based on current date
+            if (currentDate >= stage3StartDate) {
+                // Stage 3: After June 24
+                document.getElementById('stage-3').style.display = 'block';
+                document.title = "Kneadyboi - Thank You";
+            } else if (currentDate >= stage2StartDate) {
+                // Stage 2: June 11-24
+                document.getElementById('stage-2').style.display = 'block';
+                document.title = "Kneadyboi - Closing Down Sale";
+            } else {
+                // Stage 1: Until June 10
+                document.getElementById('stage-1').style.display = 'block';
+                document.title = "Kneadyboi - Coming Soon";
+            }
+        });
+    </script>
 </body>
 </html>
