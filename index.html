@@ -15,39 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Custom styles -->
-    <style>
-        body {
-            background-color: #D21C23;
-            background-image: none;
-        }
-        .logo-area {
-            padding: 20px;
-            text-align: left;
-        }
-        .logo-area img {
-            max-height: 100px;
-            /* Adjust as needed for your logo */
-        }
-        .thank-you-section {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 3rem;
-            margin-top: 2rem;
-            border-radius: 5px;
-        }
-        .contact-form {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 3rem;
-            margin-top: 2rem;
-            border-radius: 5px;
-        }
-        .form-control {
-            margin-bottom: 1rem;
-        }
-        footer {
-            background-color: rgba(47, 23, 15, 0.9);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -58,20 +25,25 @@
         </div>
     </header>
     
-    <section class="page-section clearfix">
+    <section class="page-section hero-section">
         <div class="container">
-            <div class="thank-you-section">
-                <h2 class="section-heading mb-4">
-                    <span class="section-heading-upper">Thank You</span>
-                    <span class="section-heading-lower">We're Taking a Break</span>
-                </h2>
-                <p class="mb-3">Thank you for your support and loyalty. We're temporarily closing our business but plan to return in the future. We appreciate your understanding during this time.</p>
-                <p class="mb-3">Feel free to reach out using the contact form below if you have any questions.</p>
+            <div class="hero-content">
+                <div class="message-box">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Thank You</span>
+                        <span class="section-heading-lower">We're Taking a Break</span>
+                    </h2>
+                    <p class="mb-3">Every moment with our valued customers has been a joy. Thank you for your support and loyalty throughout our journey. We're temporarily closing our business but plan to return in the future with renewed energy.</p>
+                    <p class="mb-3">Feel free to reach out using the contact form below if you have any questions.</p>
+                    <div class="contact-button">
+                        <a href="#contact-form" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="page-section cta">
+    <section id="contact-form" class="page-section cta">
         <div class="container">
             <div class="contact-form">
                 <h2 class="section-heading mb-4">
@@ -107,7 +79,5 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </body>
 </html>
