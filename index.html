@@ -11,9 +11,7 @@
     <!-- Font Awesome icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Core CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -35,8 +33,8 @@
                         <span class="section-heading-upper">Stay Tuned</span>
                         <span class="section-heading-lower">We're Cooking Up Some News</span>
                     </h2>
-                    <p class="mb-3">Something special is in the works at Kneadyboi. Check back soon for an important announcement.</p>
-                    <p class="mb-3">Feel free to reach out using the contact form below if you have any questions.</p>
+                    <p class="mb-3">Something special is in the works at Kneadyboi. We've been busy in the kitchen preparing something we can't wait to share with you.</p>
+                    <p class="mb-3">Check back soon for an important announcement about our fortune cookies. Feel free to reach out using the contact form below if you have any questions.</p>
                     <div class="teaser-image">
                         <img src="assets/img/fortune-cookies.jpg" alt="Fortune Cookies" class="img-fluid rounded">
                     </div>
@@ -53,9 +51,9 @@
                     <div class="sale-badge">CLOSING DOWN SALE</div>
                     <h2 class="section-heading mb-4">
                         <span class="section-heading-upper">Limited Time Offer</span>
-                        <span class="section-heading-lower">Fortune Cookies</span>
+                        <span class="section-heading-lower">Fortune Cookies Sale</span>
                     </h2>
-                    <p class="mb-3">After many wonderful years, we've made the difficult decision to close our doors. As a special thank you to our loyal customers, we're offering our signature fortune cookies at a special price.</p>
+                    <p class="mb-3">After many wonderful years creating delicious fortune cookies, we've made the difficult decision to close our doors. As a special thank you to our loyal customers, we're offering our signature fortune cookies at a special price.</p>
                     
                     <div class="product-details">
                         <div class="product-image">
@@ -70,7 +68,7 @@
                         <div class="product-features">
                             <ul>
                                 <li><i class="fas fa-check"></i> Handmade in small batches</li>
-                                <li><i class="fas fa-check"></i> Customizable messages</li>
+                                <li><i class="fas fa-check"></i> Customizable messages available</li>
                                 <li><i class="fas fa-check"></i> Perfect for events & gifts</li>
                                 <li><i class="fas fa-check"></i> Limited stock available</li>
                             </ul>
@@ -94,7 +92,8 @@
                         <span class="section-heading-upper">Thank You</span>
                         <span class="section-heading-lower">We're Taking a Break</span>
                     </h2>
-                    <p class="mb-3">Every moment with our valued customers has been a joy. Thank you for your support and loyalty throughout our journey. We've closed our doors for now, but who knows what the future might bring.</p>
+                    <p class="mb-3">Every moment with our valued customers has been a joy. Thank you for supporting Kneadyboi Fortune Cookies throughout our journey.</p>
+                    <p class="mb-3">We've closed our doors for now, but who knows what the future might bring. We're grateful for all the smiles our cookies have helped create.</p>
                     <p class="mb-3">Feel free to reach out using the contact form below if you have any questions.</p>
                     <div class="closing-image">
                         <img src="assets/img/thank-you.jpg" alt="Thank You" class="img-fluid rounded">
@@ -147,56 +146,56 @@
         </div>
     </footer>
     
-<!-- JavaScript for testing specific stages -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Test mode - uncomment the stage you want to test
-        const testMode = true;
-        const stageToTest = 2; // Change this to 1, 2, or 3 to test different stages
-        
-        if (testMode) {
-            // Hide all stages initially
-            document.getElementById('stage-1').style.display = 'none';
-            document.getElementById('stage-2').style.display = 'none';
-            document.getElementById('stage-3').style.display = 'none';
+    <!-- JavaScript for testing specific stages -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Test mode - set to true to test specific stages
+            const testMode = true;
+            const stageToTest = 1; // Change this to 1, 2, or 3 to test different stages
             
-            // Show only the test stage
-            document.getElementById('stage-' + stageToTest).style.display = 'block';
-            
-            // Set appropriate title
-            if (stageToTest === 1) {
-                document.title = "Kneadyboi - Coming Soon";
-            } else if (stageToTest === 2) {
-                document.title = "Kneadyboi - Closing Down Sale";
-            } else if (stageToTest === 3) {
-                document.title = "Kneadyboi - Thank You";
-            }
-        } else {
-            // Normal date-based logic (for production)
-            const stage2StartDate = new Date('2025-06-11T00:00:00+10:00'); // June 11, 2025
-            const stage3StartDate = new Date('2025-06-25T00:00:00+10:00'); // June 25, 2025
-            
-            // Get current date
-            const currentDate = new Date();
-            
-            // Hide all stages initially
-            document.getElementById('stage-1').style.display = 'none';
-            document.getElementById('stage-2').style.display = 'none';
-            document.getElementById('stage-3').style.display = 'none';
-            
-            // Show appropriate stage based on current date
-            if (currentDate >= stage3StartDate) {
-                document.getElementById('stage-3').style.display = 'block';
-                document.title = "Kneadyboi - Thank You";
-            } else if (currentDate >= stage2StartDate) {
-                document.getElementById('stage-2').style.display = 'block';
-                document.title = "Kneadyboi - Closing Down Sale";
+            if (testMode) {
+                // Hide all stages initially
+                document.getElementById('stage-1').style.display = 'none';
+                document.getElementById('stage-2').style.display = 'none';
+                document.getElementById('stage-3').style.display = 'none';
+                
+                // Show only the test stage
+                document.getElementById('stage-' + stageToTest).style.display = 'block';
+                
+                // Set appropriate title
+                if (stageToTest === 1) {
+                    document.title = "Kneadyboi - Coming Soon";
+                } else if (stageToTest === 2) {
+                    document.title = "Kneadyboi - Closing Down Sale";
+                } else if (stageToTest === 3) {
+                    document.title = "Kneadyboi - Thank You";
+                }
             } else {
-                document.getElementById('stage-1').style.display = 'block';
-                document.title = "Kneadyboi - Coming Soon";
+                // Normal date-based logic (for production)
+                const stage2StartDate = new Date('2025-06-11T00:00:00+10:00'); // June 11, 2025
+                const stage3StartDate = new Date('2025-06-25T00:00:00+10:00'); // June 25, 2025
+                
+                // Get current date
+                const currentDate = new Date();
+                
+                // Hide all stages initially
+                document.getElementById('stage-1').style.display = 'none';
+                document.getElementById('stage-2').style.display = 'none';
+                document.getElementById('stage-3').style.display = 'none';
+                
+                // Show appropriate stage based on current date
+                if (currentDate >= stage3StartDate) {
+                    document.getElementById('stage-3').style.display = 'block';
+                    document.title = "Kneadyboi - Thank You";
+                } else if (currentDate >= stage2StartDate) {
+                    document.getElementById('stage-2').style.display = 'block';
+                    document.title = "Kneadyboi - Closing Down Sale";
+                } else {
+                    document.getElementById('stage-1').style.display = 'block';
+                    document.title = "Kneadyboi - Coming Soon";
+                }
             }
-        }
-    });
-</script>
+        });
+    </script>
 </body>
 </html>
