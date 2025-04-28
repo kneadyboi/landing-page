@@ -1,19 +1,11 @@
-/* This file contains essential styles plus our custom modifications */
-
-/* Base styles from Business Casual theme - keep what's needed */
+/* Base styles */
 body {
   font-family: 'Lora';
-  background-color: #D21C23; /* Your custom background color */
-  background-image: none; /* Remove default background image */
+  background-color: #D21C23; /* Your specified red background color */
   color: #212529;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway';
 }
 
@@ -21,94 +13,82 @@ p {
   line-height: 1.75;
 }
 
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.site-heading {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  line-height: 1;
-}
-
-.site-heading .site-heading-upper {
-  display: block;
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-.site-heading .site-heading-lower {
-  font-size: 5rem;
-  font-weight: 100;
-  line-height: 4rem;
-}
-
-.page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.section-heading {
-  text-transform: uppercase;
-}
-
-.section-heading .section-heading-upper {
-  display: block;
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.section-heading .section-heading-lower {
-  display: block;
-  font-size: 3rem;
-  font-weight: 100;
-}
-
-.bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-/* Custom styles for our landing page */
+/* Header / Logo area */
 .logo-area {
-  padding: 20px;
+  padding: 20px 0;
   text-align: left;
 }
 
 .logo-area img {
-  max-height: 100px;
-  /* Adjust as needed for your logo */
+  max-height: 80px;
 }
 
-.thank-you-section {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 3rem;
-  margin-top: 2rem;
+/* Hero Section - Coffee Shop Layout Style */
+.hero-section {
+  margin: 30px 0;
+  background-image: url('../assets/img/coffee-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.contact-form {
+.hero-content {
+  display: flex;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.message-box {
   background-color: rgba(255, 255, 255, 0.85);
-  padding: 3rem;
-  margin-top: 2rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  max-width: 50%;
+  margin: 50px;
+  position: relative;
 }
 
-.form-control {
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  border-radius: 3px;
-  border: 1px solid #ced4da;
+.section-heading {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.contact-button {
+  margin-top: 30px;
 }
 
 .btn-primary {
   background-color: #D21C23;
   border-color: #D21C23;
-  padding: 0.75rem 2rem;
+  color: white;
+  padding: 12px 25px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -116,25 +96,76 @@ p {
   border-color: #af1720;
 }
 
-footer {
-  background-color: rgba(47, 23, 15, 0.9);
-  color: rgba(255, 255, 255, 0.7);
-  padding: 2rem 0;
+/* Contact Form Section */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 50px;
+  margin: 40px 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 3px;
+  border: 1px solid #ced4da;
+  font-family: 'Raleway';
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 992px) {
-  .thank-you-section,
-  .contact-form {
-    padding: 2rem;
+  .message-box {
+    padding: 40px;
+    max-width: 70%;
   }
 }
 
 @media (max-width: 768px) {
-  .site-heading .site-heading-lower {
-    font-size: 3rem;
+  .hero-content {
+    min-height: auto;
   }
-  .section-heading .section-heading-lower {
+  
+  .message-box {
+    padding: 30px;
+    max-width: 90%;
+    margin: 30px auto;
+  }
+  
+  .section-heading-lower {
     font-size: 2.5rem;
+  }
+  
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .message-box {
+    padding: 20px;
+    margin: 20px;
   }
 }
