@@ -23,6 +23,8 @@ p {
 .logo-area {
   padding: 20px 0;
   text-align: left;
+  background-color: #E2D6C5; /* Added this line to set the header background color */
+  width: 100%;               /* Make sure it spans the full width */
 }
 
 .logo-area img {
