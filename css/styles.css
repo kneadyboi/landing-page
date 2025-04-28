@@ -386,3 +386,31 @@ textarea.form-control {
     font-size: 2.2rem;
   }
 }
+/* Background image only for the hero message box */
+.hero-section {
+  margin: 30px 0;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url('assets/img/background.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Keep the card semi-transparent to show the background image */
+.message-box {
+  background-color: rgba(253, 255, 246, 0.95); /* Slightly transparent off-white */
+  padding: 40px;
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Red background for the body remains */
+body {
+  background-color: var(--primary-red);
+  /* Other styles remain the same */
+}
