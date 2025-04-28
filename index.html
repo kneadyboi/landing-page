@@ -60,7 +60,7 @@
                     <div class="sale-badge">CLOSING DOWN SALE</div>
                     <h2 class="section-heading mb-4">
                         <span class="section-heading-upper">Limited Time Offer</span>
-                        <span class="section-heading-lower">Fortune Cookies Sale</span>
+                        <span class="section-heading-lower">Mystery Box of 10</span>
                     </h2>
                     <p class="mb-3">After many wonderful years creating delicious fortune cookies, we've made the difficult decision to close our doors. As a special thank you to our loyal customers, we're offering our signature fortune cookies at a special price.</p>
                     
@@ -71,22 +71,27 @@
                         <div class="price-box">
                             <span class="price-original">$24.95</span>
                             <span class="price">$10.00</span>
-                            <span class="unit">Box of 12 Cookies</span>
-                            <p class="shipping-info">Plus shipping</p>
+                            <span class="unit">For 10 Cookies</span>
+                            <p class="shipping-info">including GST</p>
                         </div>
                         <div class="product-features">
                             <ul>
-                                <li><i class="fas fa-check"></i> Handmade in small batches</li>
-                                <li><i class="fas fa-check"></i> Customizable messages available</li>
-                                <li><i class="fas fa-check"></i> Perfect for events & gifts</li>
+                                <li><i class="fas fa-check"></i> Each pack contains 10 randomly selected fortune cookies.</li>
+                                <li><i class="fas fa-check"></i> Cookies will be packaged in plain boxes (pictured), not the standard Kneadyboi boxes</li>
+                                <li><i class="fas fa-check"></i> Boxes are picked and packed randomly. No exchanges or refunds for disappointing selection</li>
                                 <li><i class="fas fa-check"></i> Limited stock available</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="buy-button">
-                        <!-- Stripe payment link -->
-                        <a href="YOUR_STRIPE_PAYMENT_LINK" class="btn btn-primary btn-lg">Buy Now</a>
-                    </div>
+                    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1RIosWJr3nELXXlDf4HzFcnX"
+  publishable-key="pk_live_51MBGMDJr3nELXXlDmAksKPdMHqC2kHGAJ6638pUZD5Gt3wrxjviFu5gYhc9vdMSie0xhCXuFCj4SBJkWMA74EwCR00raIFVmlP"
+>
+</stripe-buy-button>
                 </div>
             </div>
         </div>
