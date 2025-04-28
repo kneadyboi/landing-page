@@ -50,15 +50,22 @@
                     <span class="section-heading-upper">Stay In Touch</span>
                     <span class="section-heading-lower">Contact Us</span>
                 </h2>
-                <!-- Formspree integration - replace YOUR_FORMSPREE_ENDPOINT with your actual endpoint -->
-                <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+<!-- FormSubmit integration with anti-spam protection -->
+                <form action="https://formsubmit.co/hello@kneadyboi.com.au" method="POST">
+                    <!-- Anti-spam honeypot field -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- Disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Custom subject line -->
+                    <input type="hidden" name="_subject" value="New message from Kneadyboi landing page">
+                    
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="_replyto" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
@@ -69,10 +76,9 @@
             </div>
         </div>
     </section>
-
     <footer class="footer text-faded text-center py-5">
         <div class="container">
-            <p class="m-0 small">Copyright &copy; Your Business 2025</p>
+            <p class="m-0 small">Copyright &copy; Kneadyboi 2025</p>
         </div>
     </footer>
     
