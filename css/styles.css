@@ -297,29 +297,33 @@ header .container {
   font-size: 1.1rem;
 }
 
-/* Contact Form */
+/* Contact Form - Mobile Optimized */
 .contact-form {
   background-color: var(--off-white);
-  padding: 40px;
-  margin: 40px auto;
+  padding: 30px 25px;
+  margin: 30px auto;
   max-width: 800px;
   border-radius: 8px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Smaller spacing for mobile */
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
+/* Optimize form fields size */
 .form-control {
   width: 100%;
-  padding: 12px 15px;
+  padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid #ddd;
   font-family: 'Poppins', sans-serif;
   background-color: white;
-  font-size: 1rem;
+  font-size: 16px; /* Prevents zoom on mobile */
   transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+  max-width: 100%; /* Prevents overflow */
 }
 
 .form-control:focus {
@@ -328,17 +332,21 @@ header .container {
   box-shadow: 0 0 0 3px rgba(40, 94, 55, 0.1);
 }
 
+/* Smaller labels */
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #444;
   font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
 }
 
+/* Smaller text area */
 textarea.form-control {
-  min-height: 120px;
+  min-height: 90px;
   resize: vertical;
+  max-height: 150px;
 }
 
 /* Footer */
@@ -379,6 +387,12 @@ textarea.form-control {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
+  
+  /* Compact button for mobile */
+  .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
 }
 
 /* Additional mobile optimizations */
@@ -395,8 +409,8 @@ textarea.form-control {
   }
   
   .contact-form {
-    padding: 25px 20px;
-    margin: 15px 10px;
+    padding: 20px 15px;
+    margin: 15px 5px;
   }
   
   /* Better touch targets for mobile */
@@ -407,8 +421,11 @@ textarea.form-control {
   
   /* Optimize form fields for mobile */
   .form-control {
-    font-size: 16px; /* Prevents zoom on input focus on iOS */
-    padding: 12px;
+    padding: 8px 10px;
+  }
+  
+  textarea.form-control {
+    min-height: 80px;
   }
   
   .logo-area img {
