@@ -6,10 +6,49 @@
     <meta name="description" content="Thank you for your message" />
     <meta name="author" content="Kneadyboi" />
     <title>Thank You - Message Received</title>
-    <!-- Use the same stylesheets as your main page -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .thank-you-section {
+            background-color: #FDFFF6;
+            padding: 50px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .thank-you-section i {
+            font-size: 4rem;
+            color: #D21C23;
+            margin-bottom: 20px;
+        }
+        
+        .return-link {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #285E37;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .return-link:hover {
+            background-color: #1a4325;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,12 +62,14 @@
     <section class="page-section">
         <div class="container">
             <div class="thank-you-section">
+                <i class="fas fa-envelope-open-text"></i>
                 <h2 class="section-heading mb-4">
                     <span class="section-heading-upper">Message Received</span>
                     <span class="section-heading-lower">Thank You</span>
                 </h2>
-                <p class="mb-3">We've received your message and will be in touch soon. Thanks for reaching out!</p>
-                <p class="mb-3"><a href="index.html">Return to home page</a></p>
+                <p class="mb-3">We've received your message and will be in touch soon.</p>
+                <p class="mb-3">Thanks for reaching out!</p>
+                <a href="index.html" class="return-link">Return to Homepage</a>
             </div>
         </div>
     </section>
