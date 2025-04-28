@@ -214,3 +214,26 @@ textarea.form-control {
     margin: 20px;
   }
 }
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* For "Thank You" */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap'); /* For "We're Taking a Break" */
+
+/* Custom styling for the section headings */
+.section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif; /* Mont font for "Thank You" */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif; /* Elegant alternative to Tan St Canard */
+  font-style: italic; /* Optional - adds a bit of flair */
+}
