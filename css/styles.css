@@ -436,3 +436,23 @@ textarea.form-control {
     font-size: 2.2rem;
   }
 }
+/* Add this to your styles.css file */
+.shipping-notice {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness for the shipping notice */
+@media (max-width: 576px) {
+  .shipping-notice {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
